@@ -1,1370 +1,1542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food Mart Grocery Store</title>
-    <link rel="stylesheet" href="./input.css" />
-  </head>
-  <body>
-    <header class="header mt-[42px] max-w-[92%] mx-auto flex justify-between">
-      <div class="flex gap-14">
-        <div class="flex gap-3 items-center company-logo">
-          <img src="./assets/groceries 1.png" alt="" class="max-md:hidden" />
-          <div class="flex flex-col gap-1">
-            <img src="./assets/Foodmart.png" alt="" />
-            <img src="./assets/grocery store.png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div
-        class="categories-search-bar-header py-3 px-6 bg-[#f9f9f9] border border-[#f8f8f8] rounded-md"
-      >
-        <div>
-          <div class="flex">
-            <button
-              type="button"
-              class="inline-flex gap-x-1.5 text-base font-semibold text-black capitalize ring-inset ring-gray-300 items-center gap-3 justify-start w-full max-w-fit mr-3"
-              id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
-            >
-              <span>All Categories</span>
-              <svg
-                width="10"
-                height="6"
-                viewBox="0 0 10 6"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0.62515 0H8.66578C9.22202 0 9.50015 0.671875 9.1064 1.06563L5.08765 5.0875C4.8439 5.33125 4.44703 5.33125 4.20328 5.0875L0.184525 1.06563C-0.209225 0.671875 0.0689002 0 0.62515 0Z"
-                  fill="#222222"
-                />
-              </svg>
-            </button>
-            <div class="search-input flex justify-between items-center w-full">
-              <input
-                type="text"
-                placeholder="Search for more than 20,000 products"
-                class="text-base font-normal leading-6 tracking-wide bg-[#f9f9f9] font-open-sans w-full focus:outline-none px-3 border-l border-[#DEDEDE]"
-              />
 
-              <svg
-                width="16"
-                height="17"
-                viewBox="0 0 16 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M15.7812 13.8344L12.6656 10.7188C12.525 10.5781 12.3344 10.5 12.1344 10.5H11.625C12.4875 9.39688 13 8.00937 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.00937 13 9.39688 12.4875 10.5 11.625V12.1344C10.5 12.3344 10.5781 12.525 10.7188 12.6656L13.8344 15.7812C14.1281 16.075 14.6031 16.075 14.8938 15.7812L15.7781 14.8969C16.0719 14.6031 16.0719 14.1281 15.7812 13.8344ZM6.5 10.5C4.29063 10.5 2.5 8.7125 2.5 6.5C2.5 4.29063 4.2875 2.5 6.5 2.5C8.70938 2.5 10.5 4.2875 10.5 6.5C10.5 8.70938 8.7125 10.5 6.5 10.5Z"
-                  fill="#222222"
-                />
-              </svg>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Mart Grocery Store</title>
+  <link rel="stylesheet" href="./input.css" />
+</head>
+
+<body>
+  <header class="header mt-[42px] max-w-[92%] mx-auto flex justify-between">
+    <div class="flex gap-14">
+      <div class="flex gap-3 items-center company-logo">
+        <img src="./assets/groceries 1.png" alt="" class="max-md:hidden" />
+        <div class="flex flex-col gap-1">
+          <img src="./assets/Foodmart.png" alt="" />
+          <img src="./assets/grocery store.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="categories-search-bar-header py-3 px-6 bg-[#f9f9f9] border border-[#f8f8f8] rounded-md">
+      <div>
+        <div class="flex">
+          <button type="button"
+            class="inline-flex gap-x-1.5 text-base font-semibold text-black capitalize ring-inset ring-gray-300 items-center gap-3 justify-start w-full max-w-fit mr-3"
+            id="menu-button" aria-expanded="true" aria-haspopup="true">
+            <span>All Categories</span>
+            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M0.62515 0H8.66578C9.22202 0 9.50015 0.671875 9.1064 1.06563L5.08765 5.0875C4.8439 5.33125 4.44703 5.33125 4.20328 5.0875L0.184525 1.06563C-0.209225 0.671875 0.0689002 0 0.62515 0Z"
+                fill="#222222" />
+            </svg>
+          </button>
+          <div class="search-input flex justify-between items-center w-full">
+            <input type="text" placeholder="Search for more than 20,000 products"
+              class="text-base font-normal leading-6 tracking-wide bg-[#f9f9f9] font-open-sans w-full focus:outline-none px-3 border-l border-[#DEDEDE]" />
+
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M15.7812 13.8344L12.6656 10.7188C12.525 10.5781 12.3344 10.5 12.1344 10.5H11.625C12.4875 9.39688 13 8.00937 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.00937 13 9.39688 12.4875 10.5 11.625V12.1344C10.5 12.3344 10.5781 12.525 10.7188 12.6656L13.8344 15.7812C14.1281 16.075 14.6031 16.075 14.8938 15.7812L15.7781 14.8969C16.0719 14.6031 16.0719 14.1281 15.7812 13.8344ZM6.5 10.5C4.29063 10.5 2.5 8.7125 2.5 6.5C2.5 4.29063 4.2875 2.5 6.5 2.5C8.70938 2.5 10.5 4.2875 10.5 6.5C10.5 8.70938 8.7125 10.5 6.5 10.5Z"
+                fill="#222222" />
+            </svg>
           </div>
         </div>
       </div>
-      <div class="user-info hidden lg:flex items-center gap-[20px]">
-        <div class="icons flex gap-[20px]">
+    </div>
+    <div class="user-info hidden lg:flex items-center gap-[20px]">
+      <div class="icons flex gap-[20px]">
+        <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
+          <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute top-[35%] right-[35%] bottom-0">
+            <path
+              d="M5 6C6.57812 6 7.85714 4.65703 7.85714 3C7.85714 1.34297 6.57812 0 5 0C3.42188 0 2.14286 1.34297 2.14286 3C2.14286 4.65703 3.42188 6 5 6ZM7 6.75H6.62723C6.1317 6.98906 5.58036 7.125 5 7.125C4.41964 7.125 3.87054 6.98906 3.37277 6.75H3C1.34375 6.75 0 8.16094 0 9.9V10.875C0 11.4961 0.479911 12 1.07143 12H8.92857C9.52009 12 10 11.4961 10 10.875V9.9C10 8.16094 8.65625 6.75 7 6.75Z"
+              fill="#222222" />
+          </svg>
+        </span>
+        <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
+          <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute top-[35%] right-[35%] bottom-0">
+            <path
+              d="M10.8352 0.683764C9.55089 -0.358627 7.64077 -0.171131 6.46188 0.98733L6.00017 1.44045L5.53846 0.98733C4.36192 -0.171131 2.44946 -0.358627 1.16511 0.683764C-0.306738 1.88017 -0.38408 4.02745 0.933082 5.3243L5.46815 9.78404C5.76111 10.072 6.23689 10.072 6.52985 9.78404L11.0649 5.3243C12.3844 4.02745 12.3071 1.88017 10.8352 0.683764Z"
+              fill="#222222" />
+          </svg>
+        </span>
+        <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
+          <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+            class="absolute top-[32%] right-[35%] bottom-0">
+            <path
+              d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+              fill="#222222" />
+          </svg>
+        </span>
+      </div>
+      <div class="cart-details flex flex-col gap-[1px]">
+        <span class="font-normal text-xs leading-4 capitalize text-[#b9b9b9] font-open-sans">Your Cart</span>
+        <span class="cart-amount font-open-sans font-semibold text-lg">$1290.00</span>
+      </div>
+    </div>
+    <div class="dropdown lg:hidden">
+      <label tabindex="0" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+        </svg>
+      </label>
+      <ul tabindex="0"
+        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-44 right-0 gap-y-1">
+        <li class="flex flex-row">
           <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-            <svg
-              width="10"
-              height="12"
-              viewBox="0 0 10 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-[35%] right-[35%] bottom-0"
-            >
+            <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-[35%] right-[35%] bottom-0">
               <path
                 d="M5 6C6.57812 6 7.85714 4.65703 7.85714 3C7.85714 1.34297 6.57812 0 5 0C3.42188 0 2.14286 1.34297 2.14286 3C2.14286 4.65703 3.42188 6 5 6ZM7 6.75H6.62723C6.1317 6.98906 5.58036 7.125 5 7.125C4.41964 7.125 3.87054 6.98906 3.37277 6.75H3C1.34375 6.75 0 8.16094 0 9.9V10.875C0 11.4961 0.479911 12 1.07143 12H8.92857C9.52009 12 10 11.4961 10 10.875V9.9C10 8.16094 8.65625 6.75 7 6.75Z"
-                fill="#222222"
-              />
+                fill="#222222" />
             </svg>
           </span>
+          <p>User Info</p>
+        </li>
+        <li tabindex="0" class="flex flex-row">
           <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-            <svg
-              width="12"
-              height="10"
-              viewBox="0 0 12 10"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-[35%] right-[35%] bottom-0"
-            >
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-[35%] right-[35%] bottom-0">
               <path
                 d="M10.8352 0.683764C9.55089 -0.358627 7.64077 -0.171131 6.46188 0.98733L6.00017 1.44045L5.53846 0.98733C4.36192 -0.171131 2.44946 -0.358627 1.16511 0.683764C-0.306738 1.88017 -0.38408 4.02745 0.933082 5.3243L5.46815 9.78404C5.76111 10.072 6.23689 10.072 6.52985 9.78404L11.0649 5.3243C12.3844 4.02745 12.3071 1.88017 10.8352 0.683764Z"
-                fill="#222222"
-              />
+                fill="#222222" />
             </svg>
           </span>
+          <p>WishList</p>
+        </li>
+        <li class="flex flex-row">
           <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-            <svg
-              width="14"
-              height="12"
-              viewBox="0 0 14 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              class="absolute top-[32%] right-[35%] bottom-0"
-            >
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg"
+              class="absolute top-[32%] right-[35%] bottom-0">
               <path
                 d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                fill="#222222"
-              />
+                fill="#222222" />
             </svg>
           </span>
-        </div>
-        <div class="cart-details flex flex-col gap-[1px]">
-          <span
-            class="font-normal text-xs leading-4 capitalize text-[#b9b9b9] font-open-sans"
-            >Your Cart</span
-          >
-          <span class="cart-amount font-open-sans font-semibold text-lg"
-            >$1290.00</span
-          >
-        </div>
-      </div>
-      <div class="dropdown lg:hidden">
-        <label tabindex="0" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16"
-            />
-          </svg>
-        </label>
-        <ul
-          tabindex="0"
-          class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-44 right-0 gap-y-1"
-        >
-          <li class="flex flex-row">
-            <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-              <svg
-                width="10"
-                height="12"
-                viewBox="0 0 10 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="absolute top-[35%] right-[35%] bottom-0"
-              >
-                <path
-                  d="M5 6C6.57812 6 7.85714 4.65703 7.85714 3C7.85714 1.34297 6.57812 0 5 0C3.42188 0 2.14286 1.34297 2.14286 3C2.14286 4.65703 3.42188 6 5 6ZM7 6.75H6.62723C6.1317 6.98906 5.58036 7.125 5 7.125C4.41964 7.125 3.87054 6.98906 3.37277 6.75H3C1.34375 6.75 0 8.16094 0 9.9V10.875C0 11.4961 0.479911 12 1.07143 12H8.92857C9.52009 12 10 11.4961 10 10.875V9.9C10 8.16094 8.65625 6.75 7 6.75Z"
-                  fill="#222222"
-                />
-              </svg>
-            </span>
-            <p>User Info</p>
-          </li>
-          <li tabindex="0" class="flex flex-row">
-            <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-              <svg
-                width="12"
-                height="10"
-                viewBox="0 0 12 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="absolute top-[35%] right-[35%] bottom-0"
-              >
-                <path
-                  d="M10.8352 0.683764C9.55089 -0.358627 7.64077 -0.171131 6.46188 0.98733L6.00017 1.44045L5.53846 0.98733C4.36192 -0.171131 2.44946 -0.358627 1.16511 0.683764C-0.306738 1.88017 -0.38408 4.02745 0.933082 5.3243L5.46815 9.78404C5.76111 10.072 6.23689 10.072 6.52985 9.78404L11.0649 5.3243C12.3844 4.02745 12.3071 1.88017 10.8352 0.683764Z"
-                  fill="#222222"
-                />
-              </svg>
-            </span>
-            <p>WishList</p>
-          </li>
-          <li class="flex flex-row">
-            <span class="icon relative rounded-full bg-[#F1F1F1] w-9 h-9">
-              <svg
-                width="14"
-                height="12"
-                viewBox="0 0 14 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                class="absolute top-[32%] right-[35%] bottom-0"
-              >
-                <path
-                  d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                  fill="#222222"
-                />
-              </svg>
-            </span>
-            <p>Cart Details</p>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- <img src="./assets/Rectangle 3 (1).png" alt=""> -->
-    <section
-      class="billboard-wrapper z-1 backdrop-brightness-50 bg-cover"
-      style="
+          <p>Cart Details</p>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- <img src="./assets/Rectangle 3 (1).png" alt=""> -->
+  <section class="billboard-wrapper z-1 backdrop-brightness-50 bg-cover" style="
         background-image: linear-gradient(
             rgba(255, 255, 255, 0.9),
             rgba(255, 255, 255, 0.9)
           ),
           url(./assets/background.png);
-      "
-    >
-      <div class="billboard w-100 h-full max-w-[92%] bg-opacity-5 mx-auto mt-6">
-        <div class="navbar">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <label tabindex="0" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
-              </label>
-              <ul
-                tabindex="0"
-                class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-              >
-                <li><a>Home</a></li>
-                <li tabindex="0">
-                  <a class="justify-between">
-                    Parent
-                    <svg
-                      class="fill-current"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"
-                      />
-                    </svg>
-                  </a>
-                  <ul class="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
-              </ul>
-            </div>
-            <a
-              class="btn btn-ghost text-base font-normal font-open-sans pl-0 leading-5 capitalize color-[#222222]"
-              ><span class="flex items-center leading-3"
-                >Shop By Departments
-                <svg
-                  width="8"
-                  height="5"
-                  viewBox="0 0 8 5"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.57737 4.82938L0.176305 1.538C-0.0587684 1.3105 -0.0587684 0.942643 0.176305 0.71757L0.741482 0.17062C0.976555 -0.0568732 1.35667 -0.0568732 1.58925 0.17062L4 2.50363L6.41075 0.17062C6.64583 -0.0568732 7.02595 -0.0568732 7.25852 0.17062L7.82369 0.71757C8.05877 0.945063 8.05877 1.31292 7.82369 1.538L4.42263 4.82938C4.19256 5.05687 3.81244 5.05687 3.57737 4.82938Z"
-                    fill="#222222"
-                  /></svg></span
-            ></a>
-          </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 gap-1">
-              <li
-                class="bg-[#FFC43F] w-24 flex justify-center items-center rounded-md"
-              >
-                <a>Home</a>
+      ">
+    <div class="billboard w-100 h-full max-w-[92%] bg-opacity-5 mx-auto mt-6">
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li tabindex="0">
+                <a class="justify-between">
+                  Parent
+                  <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                    viewBox="0 0 24 24">
+                    <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
+                  </svg>
+                </a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
               </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-                tabindex="0"
-              >
-                <a>Shop</a>
-              </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-              >
-                <a>Page</a>
-              </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-              >
-                <a>Services</a>
-              </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-              >
-                <a>Blog</a>
-              </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-              >
-                <a>Contact</a>
-              </li>
-              <li
-                class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]"
-              >
-                <a>Offers</a>
-              </li>
+              <li><a>Item 3</a></li>
             </ul>
           </div>
-          <div class="navbar-end flex gap-2">
-            <span>
-              <svg
-                width="26"
-                height="24"
-                viewBox="0 0 26 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+          <a class="btn btn-ghost text-base font-normal font-open-sans pl-0 leading-5 capitalize color-[#222222]"><span
+              class="flex items-center leading-3">Shop By Departments
+              <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
-                  d="M1.625 22.2857C1.625 23.2339 2.35117 24 3.25 24H11.375V15.4286H1.625V22.2857ZM14.625 24H22.75C23.6488 24 24.375 23.2339 24.375 22.2857V15.4286H14.625V24ZM24.375 6.85714H22.2371C22.552 6.20893 22.75 5.49107 22.75 4.71429C22.75 2.11607 20.7441 0 18.2812 0C16.1688 0 14.8027 1.14107 13.0508 3.65893C11.2988 1.14107 9.93281 0 7.82031 0C5.35742 0 3.35156 2.11607 3.35156 4.71429C3.35156 5.49107 3.54453 6.20893 3.86445 6.85714H1.625C0.726172 6.85714 0 7.62321 0 8.57143V12.8571C0 13.3286 0.365625 13.7143 0.8125 13.7143H25.1875C25.6344 13.7143 26 13.3286 26 12.8571V8.57143C26 7.62321 25.2738 6.85714 24.375 6.85714ZM7.81523 6.85714C6.69297 6.85714 5.78398 5.89821 5.78398 4.71429C5.78398 3.53036 6.69297 2.57143 7.81523 2.57143C8.82578 2.57143 9.57227 2.74821 12.1875 6.85714H7.81523ZM18.2812 6.85714H13.909C16.5191 2.75893 17.2453 2.57143 18.2812 2.57143C19.4035 2.57143 20.3125 3.53036 20.3125 4.71429C20.3125 5.89821 19.4035 6.85714 18.2812 6.85714Z"
-                  fill="#FFA801"
-                />
-              </svg>
-            </span>
-            <p class="font-open-sans font-semibold leading-6 color-[#22222]">
-              Get your coupon code
-            </p>
-          </div>
+                  d="M3.57737 4.82938L0.176305 1.538C-0.0587684 1.3105 -0.0587684 0.942643 0.176305 0.71757L0.741482 0.17062C0.976555 -0.0568732 1.35667 -0.0568732 1.58925 0.17062L4 2.50363L6.41075 0.17062C6.64583 -0.0568732 7.02595 -0.0568732 7.25852 0.17062L7.82369 0.71757C8.05877 0.945063 8.05877 1.31292 7.82369 1.538L4.42263 4.82938C4.19256 5.05687 3.81244 5.05687 3.57737 4.82938Z"
+                  fill="#222222" />
+              </svg></span></a>
         </div>
-        <div
-          class="billboard-cards-wrapper flex flex-row gap-7 mt-10 max-xl:flex-col"
-        >
-          <div
-            class="bg-[#E6F3FA] rounded-xl w-3/5 max-xl:w-full pl-12 flex flex-row items-center justify-between"
-          >
-            <div class="billboard-img-text flex flex-col">
-              <span
-                class="font-normal text-3xl font-garamond leading-7 tracking-wide capitalize text-[#ED8939]"
-                >100% Natural</span
-              >
-              <h2
-                class="mt-8 font-nunito font-bold text-5xl leading-[126%] tracking-wide text-black"
-              >
-                Fresh Smoothie & Summer Juice
-              </h2>
-              <span
-                class="font-open-sans mt-6 text-lg leading-6 tracking-wide capitalize text-[#727272]"
-                >Best selling summer juice with natural extracts.</span
-              >
-              <a
-                href="#"
-                class="btn btn-outline rounded-[4px] w-44 font-open-sans mt-12"
-                >Shop now</a
-              >
-            </div>
-            <img src="./assets/Image 1.png" alt="" />
-          </div>
-          <div
-            class="flex flex-col gap-8 max-xl:flex-row max-xl:w-full w-2/5 h-full"
-          >
-            <div
-              class="bg-[#EEF5E4] rounded-xl pl-12 flex flex-col justify-center min-h-[300px] relative max-xl:w-1/2"
-            >
-              <span
-                class="font-garamond text-4xl leading-8 capitalize text-[#252525]"
-                >20% off</span
-              >
-              <div
-                class="flex items-center flex-row leading-3 text-xs text-[#252525] tracking-[0.3em]"
-              >
-                <span class="tracking-[-0.1rem] mr-2 mt-1">----------</span>SALE
-              </div>
-              <h2
-                class="mt-7 mb-6 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black z-10"
-              >
-                Fruits & Vegetables
-              </h2>
-              <a
-                href="#"
-                class="font-open-sans leading-5 flex items-center capitalize text-black"
-                >Shop The Category
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 8 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.40141 0.535837L3.79779 0.12915C3.96563 -0.0430502 4.23703 -0.0430502 4.40308 0.12915L7.87412 3.68857C8.04196 3.86077 8.04196 4.13923 7.87412 4.3096L4.40308 7.87085C4.23524 8.04305 3.96384 8.04305 3.79779 7.87085L3.40141 7.46416C3.23178 7.29013 3.23535 7.00618 3.40855 6.83581L5.56009 4.73277H0.428524C0.19105 4.73277 0 4.53675 0 4.29311V3.70689C0 3.46325 0.19105 3.26723 0.428524 3.26723H5.56009L3.40855 1.16419C3.23357 0.993817 3.23 0.70987 3.40141 0.535837Z"
-                    fill="#222222"
-                  />
-                </svg>
-              </a>
-              <img
-                src="./assets/top-view-vegetables-fruits-bag 1.png"
-                class="absolute rounded-xl right-0 bottom-0"
-                alt=""
-              />
-            </div>
-            <div
-              class="bg-[#F9ECDE] rounded-xl pl-12 flex flex-col justify-center min-h-[300px] relative max-xl:w-1/2"
-            >
-              <span
-                class="font-garamond text-4xl leading-8 capitalize text-[#252525]"
-                >15% off</span
-              >
-              <div
-                class="flex items-center flex-row leading-3 text-xs text-[#252525] tracking-[0.3em]"
-              >
-                <span class="tracking-[-0.1rem] mr-2 mt-1">----------</span>SALE
-              </div>
-              <h2
-                class="mt-7 mb-6 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black z-10"
-              >
-                Baked Products
-              </h2>
-              <a
-                href="#"
-                class="font-open-sans leading-5 flex items-center capitalize text-black"
-                >Shop The Category
-                <svg
-                  width="8"
-                  height="8"
-                  viewBox="0 0 8 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3.40141 0.535837L3.79779 0.12915C3.96563 -0.0430502 4.23703 -0.0430502 4.40308 0.12915L7.87412 3.68857C8.04196 3.86077 8.04196 4.13923 7.87412 4.3096L4.40308 7.87085C4.23524 8.04305 3.96384 8.04305 3.79779 7.87085L3.40141 7.46416C3.23178 7.29013 3.23535 7.00618 3.40855 6.83581L5.56009 4.73277H0.428524C0.19105 4.73277 0 4.53675 0 4.29311V3.70689C0 3.46325 0.19105 3.26723 0.428524 3.26723H5.56009L3.40855 1.16419C3.23357 0.993817 3.23 0.70987 3.40141 0.535837Z"
-                    fill="#222222"
-                  />
-                </svg>
-              </a>
-              <img
-                src="./assets/bakery 1.png"
-                class="absolute right-0 bottom-0"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="category-slider-wrapper mt-24 max-w-[92%] mx-auto">
-      <div class="category-header flex flex-row justify-between">
-        <h2 class="font-nunito font-bold text-4xl leading-10">Category</h2>
-        <div class="category-slider flex flex-row items-center">
-          <span class="font-open-sans font-semibold text-base leading-5 mr-8"
-            >View All Categories</span
-          >
-          <div class="slider-btns flex gap-3">
-            <button
-              class="btn btn-square h-11 w-11 bg-[#F1F1F1] rounded-xl border-none"
-            >
-              <svg
-                width="10"
-                height="17"
-                viewBox="0 0 10 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.375 2.375L3.17383 8.625L9.375 14.875L7.8125 16.4375L0 8.625L7.8125 0.8125L9.375 2.375Z"
-                  fill="#222222"
-                />
-              </svg>
-            </button>
-            <button
-              class="btn btn-square h-11 w-11 bg-[#FFC43F] rounded-xl border-none"
-            >
-              <svg
-                width="10"
-                height="17"
-                viewBox="0 0 10 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 2.375L1.5625 0.8125L9.375 8.625L1.5625 16.4375L0 14.875L6.20117 8.625L0 2.375Z"
-                  fill="#222222"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="category-items flex gap-7 mt-10">
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/vegetables broccoli.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Fruits & Veges</span
-            >
-          </div>
-        </div>
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/bread baguette.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Breads & Sweets</span
-            >
-          </div>
-        </div>
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/wine glass bottle.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Wine Drinks</span
-            >
-          </div>
-        </div>
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/soft drinks bottle 1.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Oil & Ghee</span
-            >
-          </div>
-        </div>
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/animal products drumsticks.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Raw Meat</span
-            >
-          </div>
-        </div>
-        <div
-          class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex justify-center items-center p-0">
-            <img src="./assets/bread herb flour.png" />
-            <span
-              class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6"
-              >Raw Meat</span
-            >
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="newly-active-brands-wrapper mt-24 max-w-[92%] mx-auto">
-      <div class="category-header flex flex-row justify-between w-full">
-        <h2 class="font-nunito font-bold text-4xl leading-10">
-          Newly Arrived Brands
-        </h2>
-        <div class="category-slider flex flex-row items-center">
-          <span class="font-open-sans font-semibold text-base leading-5 mr-8"
-            >View All Offers</span
-          >
-          <div class="slider-btns flex gap-3">
-            <button
-              class="btn btn-square h-11 w-11 bg-[#F1F1F1] rounded-xl border-none"
-            >
-              <svg
-                width="10"
-                height="17"
-                viewBox="0 0 10 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M9.375 2.375L3.17383 8.625L9.375 14.875L7.8125 16.4375L0 8.625L7.8125 0.8125L9.375 2.375Z"
-                  fill="#222222"
-                />
-              </svg>
-            </button>
-            <button
-              class="btn btn-square h-11 w-11 bg-[#FFC43F] rounded-xl border-none"
-            >
-              <svg
-                width="10"
-                height="17"
-                viewBox="0 0 10 17"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M0 2.375L1.5625 0.8125L9.375 8.625L1.5625 16.4375L0 14.875L6.20117 8.625L0 2.375Z"
-                  fill="#222222"
-                />
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="category-items flex gap-7 mt-10">
-        <div
-          class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex flex-row items-center p-0">
-            <img src="./assets/Rectangle 85.png" />
-            <div class="flex flex-col justify-center items-start">
-              <span
-                class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2"
-                >Amber Jar</span
-              >
-              <span
-                class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6"
-                >Honey best nectar you wish to get</span
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex flex-row items-center p-0">
-            <img src="./assets/Rectangle 87.png" />
-            <div class="flex flex-col justify-center items-start">
-              <span
-                class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2"
-                >Pure Herb</span
-              >
-              <span
-                class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6"
-                >Pure herb the only natural brand</span
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex flex-row items-center p-0">
-            <img src="./assets/Rectangle 89.png" />
-            <div class="flex flex-col justify-center items-start">
-              <span
-                class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2"
-                >Tuna</span
-              >
-              <span
-                class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6"
-                >Where's tuna? Tuna, clear choice!</span
-              >
-            </div>
-          </div>
-        </div>
-        <div
-          class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out"
-        >
-          <div class="card-body flex flex-row items-center p-0">
-            <img src="./assets/Rectangle 91.png" />
-            <div class="flex flex-col justify-center items-start">
-              <span
-                class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2"
-                >Hotz</span
-              >
-              <span
-                class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6"
-                >the one junk food that’s natural</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="trending-products mt-24 max-w-[92%] mx-auto">
-      <div
-        class="category-header flex flex-row justify-between w-full items-center"
-      >
-        <h2 class="font-nunito font-bold text-4xl leading-10">
-          Trending Products
-        </h2>
-        <div class="category-slider-trending-products">
-          <ul
-            class="font-open-sans font-semibold text-base leading-5 mr-8 flex gap-5 w-full justify-end"
-          >
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              All
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 gap-1">
+            <li class="bg-[#FFC43F] w-24 flex justify-center items-center rounded-md">
+              <a>Home</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              Fruits & Veges
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]" tabindex="0">
+              <a>Shop</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              Juices
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]">
+              <a>Page</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              Breads & Sweets
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]">
+              <a>Services</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              oil & ghree
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]">
+              <a>Blog</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              raw meats
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]">
+              <a>Contact</a>
             </li>
-            <li
-              class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer"
-            >
-              natural herbs
+            <li class="font-open-sans font-normal font-base leading-5 capitalize color-[#22222]">
+              <a>Offers</a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="trending-products-card-list-wrapper">
-        <div class="trending-products-card-list-inner mt-10 flex flex-wrap gap-6">
-            <div class="card bg-base-100 shadow-xl p-4 w-1/4">
-              <figure class="bg-[#F9F9F9] rounded-xl relative">
-                <img
-                  src="./assets/watermelon-juice 1.png"
-                  alt="Shoes"
-                  class="rounded-xl"
-                />
-                <div
-                  class="liked-product rounded-full bg-white absolute top-2 right-2 p-2"
-                >
-                  <svg
-                    fill="#000000"
-                    height="20"
-                    width="20"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 471.701 471.701"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
-                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
-                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
-                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
-                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
-                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
-                 C444.801,187.101,434.001,213.101,414.401,232.701z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </figure>
-              <div class="card-body p-0 gap-0">
-                <h2
-                  class="card-title text-[#FFA801] font-semibold text-lg leading-6 font-open-sans capitalize mt-3"
-                >
-                  Sunstar Fresh Melon Juice
-                </h2>
-                <div class="quantity-and-rating flex gap-3">
-                  <span
-                    class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide"
-                  >
-                    1 Unit</span
-                  >
-                  <div class="rating flex items-center gap-1">
-                    <svg
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
-                        fill="#FFC43F"
-                      />
-                    </svg>
-                    <span class="font-semibold text-sm leading-5 text-black"
-                      >4.5</span
-                    >
-                  </div>
-                </div>
-                <span
-                  class="product-price font-open-sans font-semibold text-2xl mt-3"
-                  >$18.00</span
-                >
-                <div class="card-actions mt-3 items-center justify-between">
-                  <div class="increment-decrement flex items-center gap-2">
-                    <button
-                      class="btn btn-square border-none outline-none bg-[#F2F2F2]"
-                    >
-                      <svg
-                        width="8"
-                        height="2"
-                        viewBox="0 0 8 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                    <span class="text-2xl">4</span>
-                    <button class="btn btn-square bg-[#F2F2F2] border-none">
-                      <svg
-                        width="8"
-                        height="8"
-                        viewBox="0 0 8 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <button
-                    class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9"
-                  >
-                    Add To Cart
-                    <span>
-                      <svg
-                        width="14"
-                        height="12"
-                        viewBox="0 0 14 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- <div class="card bg-base-100 shadow-xl p-4 w-1/4">
-              <figure class="bg-[#F9F9F9] rounded-xl relative">
-                <img
-                  src="./assets/watermelon-juice 1.png"
-                  alt="Shoes"
-                  class="rounded-xl"
-                />
-                <div
-                  class="liked-product rounded-full bg-white absolute top-2 right-2 p-2"
-                >
-                  <svg
-                    fill="#000000"
-                    height="20"
-                    width="20"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 471.701 471.701"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
-                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
-                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
-                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
-                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
-                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
-                 C444.801,187.101,434.001,213.101,414.401,232.701z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </figure>
-              <div class="card-body p-0 gap-0">
-                <h2
-                  class="card-title text-[#FFA801] font-semibold text-lg leading-6 font-open-sans capitalize mt-3"
-                >
-                  Sunstar Fresh Melon Juice
-                </h2>
-                <div class="quantity-and-rating flex gap-3">
-                  <span
-                    class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide"
-                  >
-                    1 Unit</span
-                  >
-                  <div class="rating flex items-center gap-1">
-                    <svg
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
-                        fill="#FFC43F"
-                      />
-                    </svg>
-                    <span class="font-semibold text-sm leading-5 text-black"
-                      >4.5</span
-                    >
-                  </div>
-                </div>
-                <span
-                  class="product-price font-open-sans font-semibold text-2xl mt-3"
-                  >$18.00</span
-                >
-                <div class="card-actions mt-3 items-center justify-between">
-                  <div class="increment-decrement flex items-center gap-2">
-                    <button
-                      class="btn btn-square border-none outline-none bg-[#F2F2F2]"
-                    >
-                      <svg
-                        width="8"
-                        height="2"
-                        viewBox="0 0 8 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                    <span class="text-2xl">4</span>
-                    <button class="btn btn-square bg-[#F2F2F2] border-none">
-                      <svg
-                        width="8"
-                        height="8"
-                        viewBox="0 0 8 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <button
-                    class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9"
-                  >
-                    Add To Cart
-                    <span>
-                      <svg
-                        width="14"
-                        height="12"
-                        viewBox="0 0 14 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl p-4 w-1/4">
-              <figure class="bg-[#F9F9F9] rounded-xl relative">
-                <img
-                  src="./assets/watermelon-juice 1.png"
-                  alt="Shoes"
-                  class="rounded-xl"
-                />
-                <div
-                  class="liked-product rounded-full bg-white absolute top-2 right-2 p-2"
-                >
-                  <svg
-                    fill="#000000"
-                    height="20"
-                    width="20"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 471.701 471.701"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
-                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
-                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
-                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
-                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
-                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
-                 C444.801,187.101,434.001,213.101,414.401,232.701z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </figure>
-              <div class="card-body p-0 gap-0">
-                <h2
-                  class="card-title text-[#FFA801] font-semibold text-lg leading-6 font-open-sans capitalize mt-3"
-                >
-                  Sunstar Fresh Melon Juice
-                </h2>
-                <div class="quantity-and-rating flex gap-3">
-                  <span
-                    class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide"
-                  >
-                    1 Unit</span
-                  >
-                  <div class="rating flex items-center gap-1">
-                    <svg
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
-                        fill="#FFC43F"
-                      />
-                    </svg>
-                    <span class="font-semibold text-sm leading-5 text-black"
-                      >4.5</span
-                    >
-                  </div>
-                </div>
-                <span
-                  class="product-price font-open-sans font-semibold text-2xl mt-3"
-                  >$18.00</span
-                >
-                <div class="card-actions mt-3 items-center justify-between">
-                  <div class="increment-decrement flex items-center gap-2">
-                    <button
-                      class="btn btn-square border-none outline-none bg-[#F2F2F2]"
-                    >
-                      <svg
-                        width="8"
-                        height="2"
-                        viewBox="0 0 8 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                    <span class="text-2xl">4</span>
-                    <button class="btn btn-square bg-[#F2F2F2] border-none">
-                      <svg
-                        width="8"
-                        height="8"
-                        viewBox="0 0 8 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <button
-                    class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9"
-                  >
-                    Add To Cart
-                    <span>
-                      <svg
-                        width="14"
-                        height="12"
-                        viewBox="0 0 14 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl p-4 w-1/4">
-              <figure class="bg-[#F9F9F9] rounded-xl relative">
-                <img
-                  src="./assets/watermelon-juice 1.png"
-                  alt="Shoes"
-                  class="rounded-xl"
-                />
-                <div
-                  class="liked-product rounded-full bg-white absolute top-2 right-2 p-2"
-                >
-                  <svg
-                    fill="#000000"
-                    height="20"
-                    width="20"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 471.701 471.701"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
-                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
-                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
-                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
-                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
-                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
-                 C444.801,187.101,434.001,213.101,414.401,232.701z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </figure>
-              <div class="card-body p-0 gap-0">
-                <h2
-                  class="card-title text-[#FFA801] font-semibold text-lg leading-6 font-open-sans capitalize mt-3"
-                >
-                  Sunstar Fresh Melon Juice
-                </h2>
-                <div class="quantity-and-rating flex gap-3">
-                  <span
-                    class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide"
-                  >
-                    1 Unit</span
-                  >
-                  <div class="rating flex items-center gap-1">
-                    <svg
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
-                        fill="#FFC43F"
-                      />
-                    </svg>
-                    <span class="font-semibold text-sm leading-5 text-black"
-                      >4.5</span
-                    >
-                  </div>
-                </div>
-                <span
-                  class="product-price font-open-sans font-semibold text-2xl mt-3"
-                  >$18.00</span
-                >
-                <div class="card-actions mt-3 items-center justify-between">
-                  <div class="increment-decrement flex items-center gap-2">
-                    <button
-                      class="btn btn-square border-none outline-none bg-[#F2F2F2]"
-                    >
-                      <svg
-                        width="8"
-                        height="2"
-                        viewBox="0 0 8 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                    <span class="text-2xl">4</span>
-                    <button class="btn btn-square bg-[#F2F2F2] border-none">
-                      <svg
-                        width="8"
-                        height="8"
-                        viewBox="0 0 8 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <button
-                    class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9"
-                  >
-                    Add To Cart
-                    <span>
-                      <svg
-                        width="14"
-                        height="12"
-                        viewBox="0 0 14 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="card bg-base-100 shadow-xl p-4 w-1/4">
-              <figure class="bg-[#F9F9F9] rounded-xl relative">
-                <img
-                  src="./assets/watermelon-juice 1.png"
-                  alt="Shoes"
-                  class="rounded-xl"
-                />
-                <div
-                  class="liked-product rounded-full bg-white absolute top-2 right-2 p-2"
-                >
-                  <svg
-                    fill="#000000"
-                    height="20"
-                    width="20"
-                    version="1.1"
-                    id="Capa_1"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 471.701 471.701"
-                    xml:space="preserve"
-                  >
-                    <g>
-                      <path
-                        d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
-                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
-                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
-                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
-                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
-                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
-                 C444.801,187.101,434.001,213.101,414.401,232.701z"
-                      />
-                    </g>
-                  </svg>
-                </div>
-              </figure>
-              <div class="card-body p-0 gap-0">
-                <h2
-                  class="card-title text-[#FFA801] font-semibold text-lg leading-6 font-open-sans capitalize mt-3"
-                >
-                  Sunstar Fresh Melon Juice
-                </h2>
-                <div class="quantity-and-rating flex gap-3">
-                  <span
-                    class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide"
-                  >
-                    1 Unit</span
-                  >
-                  <div class="rating flex items-center gap-1">
-                    <svg
-                      width="11"
-                      height="11"
-                      viewBox="0 0 11 11"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
-                        fill="#FFC43F"
-                      />
-                    </svg>
-                    <span class="font-semibold text-sm leading-5 text-black"
-                      >4.5</span
-                    >
-                  </div>
-                </div>
-                <span
-                  class="product-price font-open-sans font-semibold text-2xl mt-3"
-                  >$18.00</span
-                >
-                <div class="card-actions mt-3 items-center justify-between">
-                  <div class="increment-decrement flex items-center gap-2">
-                    <button
-                      class="btn btn-square border-none outline-none bg-[#F2F2F2]"
-                    >
-                      <svg
-                        width="8"
-                        height="2"
-                        viewBox="0 0 8 2"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                    <span class="text-2xl">4</span>
-                    <button class="btn btn-square bg-[#F2F2F2] border-none">
-                      <svg
-                        width="8"
-                        height="8"
-                        viewBox="0 0 8 8"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </button>
-                  </div>
-                  <button
-                    class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9"
-                  >
-                    Add To Cart
-                    <span>
-                      <svg
-                        width="14"
-                        height="12"
-                        viewBox="0 0 14 12"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
-                          fill="#222222"
-                        />
-                      </svg>
-                    </span>
-                  </button>
-                </div>
-              </div>
-            </div> -->
+        <div class="navbar-end flex gap-2">
+          <span>
+            <svg width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1.625 22.2857C1.625 23.2339 2.35117 24 3.25 24H11.375V15.4286H1.625V22.2857ZM14.625 24H22.75C23.6488 24 24.375 23.2339 24.375 22.2857V15.4286H14.625V24ZM24.375 6.85714H22.2371C22.552 6.20893 22.75 5.49107 22.75 4.71429C22.75 2.11607 20.7441 0 18.2812 0C16.1688 0 14.8027 1.14107 13.0508 3.65893C11.2988 1.14107 9.93281 0 7.82031 0C5.35742 0 3.35156 2.11607 3.35156 4.71429C3.35156 5.49107 3.54453 6.20893 3.86445 6.85714H1.625C0.726172 6.85714 0 7.62321 0 8.57143V12.8571C0 13.3286 0.365625 13.7143 0.8125 13.7143H25.1875C25.6344 13.7143 26 13.3286 26 12.8571V8.57143C26 7.62321 25.2738 6.85714 24.375 6.85714ZM7.81523 6.85714C6.69297 6.85714 5.78398 5.89821 5.78398 4.71429C5.78398 3.53036 6.69297 2.57143 7.81523 2.57143C8.82578 2.57143 9.57227 2.74821 12.1875 6.85714H7.81523ZM18.2812 6.85714H13.909C16.5191 2.75893 17.2453 2.57143 18.2812 2.57143C19.4035 2.57143 20.3125 3.53036 20.3125 4.71429C20.3125 5.89821 19.4035 6.85714 18.2812 6.85714Z"
+                fill="#FFA801" />
+            </svg>
+          </span>
+          <p class="font-open-sans font-semibold leading-6 color-[#22222]">
+            Get your coupon code
+          </p>
         </div>
       </div>
-    </section>
+      <div class="billboard-cards-wrapper flex flex-row gap-7 mt-10 max-xl:flex-col">
+        <div class="bg-[#E6F3FA] rounded-xl w-3/5 max-xl:w-full pl-12 flex flex-row items-center justify-between">
+          <div class="billboard-img-text flex flex-col">
+            <span class="font-normal text-3xl font-garamond leading-7 tracking-wide capitalize text-[#ED8939]">100%
+              Natural</span>
+            <h2 class="mt-8 font-nunito font-bold text-5xl leading-[126%] tracking-wide text-black">
+              Fresh Smoothie & Summer Juice
+            </h2>
+            <span class="font-open-sans mt-6 text-lg leading-6 tracking-wide capitalize text-[#727272]">Best selling
+              summer juice with natural extracts.</span>
+            <a href="#" class="btn btn-outline rounded-[4px] w-44 font-open-sans mt-12">Shop now</a>
+          </div>
+          <img src="./assets/Image 1.png" alt="" />
+        </div>
+        <div class="flex flex-col gap-8 max-xl:flex-row max-xl:w-full w-2/5 h-full">
+          <div class="bg-[#EEF5E4] rounded-xl pl-12 flex flex-col justify-center min-h-[300px] relative max-xl:w-1/2">
+            <span class="font-garamond text-4xl leading-8 capitalize text-[#252525]">20% off</span>
+            <div class="flex items-center flex-row leading-3 text-xs text-[#252525] tracking-[0.3em]">
+              <span class="tracking-[-0.1rem] mr-2 mt-1">----------</span>SALE
+            </div>
+            <h2 class="mt-7 mb-6 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black z-10">
+              Fruits & Vegetables
+            </h2>
+            <a href="#" class="font-open-sans leading-5 flex items-center capitalize text-black">Shop The Category
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.40141 0.535837L3.79779 0.12915C3.96563 -0.0430502 4.23703 -0.0430502 4.40308 0.12915L7.87412 3.68857C8.04196 3.86077 8.04196 4.13923 7.87412 4.3096L4.40308 7.87085C4.23524 8.04305 3.96384 8.04305 3.79779 7.87085L3.40141 7.46416C3.23178 7.29013 3.23535 7.00618 3.40855 6.83581L5.56009 4.73277H0.428524C0.19105 4.73277 0 4.53675 0 4.29311V3.70689C0 3.46325 0.19105 3.26723 0.428524 3.26723H5.56009L3.40855 1.16419C3.23357 0.993817 3.23 0.70987 3.40141 0.535837Z"
+                  fill="#222222" />
+              </svg>
+            </a>
+            <img src="./assets/top-view-vegetables-fruits-bag 1.png" class="absolute rounded-xl right-0 bottom-0"
+              alt="" />
+          </div>
+          <div class="bg-[#F9ECDE] rounded-xl pl-12 flex flex-col justify-center min-h-[300px] relative max-xl:w-1/2">
+            <span class="font-garamond text-4xl leading-8 capitalize text-[#252525]">15% off</span>
+            <div class="flex items-center flex-row leading-3 text-xs text-[#252525] tracking-[0.3em]">
+              <span class="tracking-[-0.1rem] mr-2 mt-1">----------</span>SALE
+            </div>
+            <h2 class="mt-7 mb-6 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black z-10">
+              Baked Products
+            </h2>
+            <a href="#" class="font-open-sans leading-5 flex items-center capitalize text-black">Shop The Category
+              <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.40141 0.535837L3.79779 0.12915C3.96563 -0.0430502 4.23703 -0.0430502 4.40308 0.12915L7.87412 3.68857C8.04196 3.86077 8.04196 4.13923 7.87412 4.3096L4.40308 7.87085C4.23524 8.04305 3.96384 8.04305 3.79779 7.87085L3.40141 7.46416C3.23178 7.29013 3.23535 7.00618 3.40855 6.83581L5.56009 4.73277H0.428524C0.19105 4.73277 0 4.53675 0 4.29311V3.70689C0 3.46325 0.19105 3.26723 0.428524 3.26723H5.56009L3.40855 1.16419C3.23357 0.993817 3.23 0.70987 3.40141 0.535837Z"
+                  fill="#222222" />
+              </svg>
+            </a>
+            <img src="./assets/bakery 1.png" class="absolute right-0 bottom-0" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="./index.js"></script>
-  </body>
+  <section class="category-slider-wrapper mt-24 max-w-[92%] mx-auto">
+    <div class="category-header flex flex-row justify-between">
+      <h2 class="font-nunito font-bold text-4xl leading-10">Category</h2>
+      <div class="category-slider flex flex-row items-center">
+        <span class="font-open-sans font-semibold text-base leading-5 mr-8">View All Categories</span>
+        <div class="slider-btns flex gap-3">
+          <button class="btn btn-square h-11 w-11 bg-[#F1F1F1] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.375 2.375L3.17383 8.625L9.375 14.875L7.8125 16.4375L0 8.625L7.8125 0.8125L9.375 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+          <button class="btn btn-square h-11 w-11 bg-[#FFC43F] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 2.375L1.5625 0.8125L9.375 8.625L1.5625 16.4375L0 14.875L6.20117 8.625L0 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="category-items flex gap-7 mt-10">
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/vegetables broccoli.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Fruits &
+            Veges</span>
+        </div>
+      </div>
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/bread baguette.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Breads &
+            Sweets</span>
+        </div>
+      </div>
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/wine glass bottle.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Wine
+            Drinks</span>
+        </div>
+      </div>
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/soft drinks bottle 1.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Oil &
+            Ghee</span>
+        </div>
+      </div>
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/animal products drumsticks.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Raw
+            Meat</span>
+        </div>
+      </div>
+      <div
+        class="card w-1/6 px-5 h-[230px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex justify-center items-center p-0">
+          <img src="./assets/bread herb flour.png" />
+          <span class="font-open-sans text-center font-bold text-xl tracking-wide capitalize leading-7 mt-6">Raw
+            Meat</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newly-active-brands-wrapper mt-24 max-w-[92%] mx-auto">
+    <div class="category-header flex flex-row justify-between w-full">
+      <h2 class="font-nunito font-bold text-4xl leading-10">
+        Newly Arrived Brands
+      </h2>
+      <div class="category-slider flex flex-row items-center">
+        <span class="font-open-sans font-semibold text-base leading-5 mr-8">View All Offers</span>
+        <div class="slider-btns flex gap-3">
+          <button class="btn btn-square h-11 w-11 bg-[#F1F1F1] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.375 2.375L3.17383 8.625L9.375 14.875L7.8125 16.4375L0 8.625L7.8125 0.8125L9.375 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+          <button class="btn btn-square h-11 w-11 bg-[#FFC43F] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 2.375L1.5625 0.8125L9.375 8.625L1.5625 16.4375L0 14.875L6.20117 8.625L0 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="category-items flex gap-7 mt-10">
+      <div
+        class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex flex-row items-center p-0">
+          <img src="./assets/Rectangle 85.png" />
+          <div class="flex flex-col justify-center items-start">
+            <span class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2">Amber Jar</span>
+            <span class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6">Honey best nectar you
+              wish to get</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex flex-row items-center p-0">
+          <img src="./assets/Rectangle 87.png" />
+          <div class="flex flex-col justify-center items-start">
+            <span class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2">Pure Herb</span>
+            <span class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6">Pure herb the only
+              natural brand</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex flex-row items-center p-0">
+          <img src="./assets/Rectangle 89.png" />
+          <div class="flex flex-col justify-center items-start">
+            <span class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2">Tuna</span>
+            <span class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6">Where's tuna? Tuna,
+              clear choice!</span>
+          </div>
+        </div>
+      </div>
+      <div
+        class="card w-1/4 px-5 py-4 h-[178px] bg-base-100 shadow-xl cursor-pointer hover:scale-110 transition-all ease-in-out">
+        <div class="card-body flex flex-row items-center p-0">
+          <img src="./assets/Rectangle 91.png" />
+          <div class="flex flex-col justify-center items-start">
+            <span class="font-bold font-open-sans text-sm text-[#C7C7C7] leading-5 mb-2">Hotz</span>
+            <span class="font-open-sans font-bold text-base text-[#333333] capitalize leading-6">the one junk food
+              that’s natural</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trending-products mt-24 max-w-[92%] mx-auto">
+    <div class="category-header flex flex-row justify-between w-full items-center">
+      <h2 class="font-nunito font-bold text-4xl leading-10">
+        Trending Products
+      </h2>
+      <div class="category-slider-trending-products">
+        <ul class="font-open-sans font-semibold text-base leading-5 mr-8 flex gap-5 w-full justify-end">
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            All
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            Fruits & Veges
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            Juices
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            Breads & Sweets
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            oil & ghree
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            raw meats
+          </li>
+          <li
+            class="font-open-sans active:font-semibold text-base tracking-[2%] font-normal text-[#858585] uppercase cursor-pointer">
+            natural herbs
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="trending-products-card-list-wrapper">
+      <div
+        class="trending-products-card-list-inner mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/watermelon-juice 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Sunstar Fresh Melon Juice
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 Unit</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.5</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$18.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/tomatoes 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Fresh local tomatoes
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/cucumber 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Fresh Cucumber
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/tomatoketchup 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Heinz tomato ketchup
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/avocado 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Local Avocado
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/biscuits 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Munch Crunchy Cookies
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/bananas 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Fresh Bananas
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/orange-juice 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Fresh Orange Juice
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/milk 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Pure Dairy milk
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/Raspberries 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Raspberries
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 KG</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.0</span>
+              </div>
+            </div>
+            <span class="product-price font-open-sans font-semibold text-2xl mt-3">$5.00</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="banners-wrapper mt-24 max-w-[92%] mx-auto relative">
+    <div class="banner-inner grid grid-cols-1 gap-8 lg:grid-cols-2">
+      <div class="single-banner bg-[#FFEADA] rounded-xl p-10 flex  items-center justify-between">
+        <div class="billboard-img-text flex flex-col">
+          <span class="font-normal text-xl font-garamond leading-7 tracking-wide capitalize text-[#BC4B68]">Upto 15%
+            Off</span>
+          <h2 class="mt-6 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black">
+            Luxa Dark Chocolate
+          </h2>
+          <span
+            class="font-open-sans mt-6 text-base leading-6 tracking-wide capitalize text-[#727272] min-h-[100px]">Chocolate
+            is only the happiness that you can eat.</span>
+          <a href="#"
+            class="btn btn-contained bg-black rounded-[4px] w-44 font-open-sans mt-12 font-normal text-base   ">SHOP
+            IT</a>
+        </div>
+        <img src="./assets/pexels-lukas-352785 1.png" class="min-h-[250px]" alt="" />
+      </div>
+      <div class="single-banner bg-[#E1F7F9] rounded-xl p-10 flex  items-center justify-between">
+        <div class="billboard-img-text flex flex-col">
+          <span class="font-normal text-xl font-garamond leading-7 tracking-wide capitalize text-[#BC4B68]">Upto 15%
+            Off</span>
+          <h2 class="mt-8 font-nunito font-bold text-3xl leading-[126%] tracking-wide text-black">
+            Creamy Muffins
+          </h2>
+          <span class="font-open-sans mt-6 text-lg leading-6 tracking-wide capitalize text-[#727272] min-h-[100px]">Very
+            tasty & creamy vanilla flavour creamy muffins.</span>
+          <a href="#"
+            class="btn btn-contained bg-black rounded-[4px] w-44 font-open-sans mt-12 font-normal text-base   ">SHOP
+            IT</a>
+        </div>
+        <img src="./assets/deva-williamson-K2ZFPgTjMDI-unsplash 4 (1).png" class="min-h-[200px] max-w-xs" alt="" />
+      </div>
+    </div>
+    <img src="./assets/leaves img pattern.png" class="absolute -left-11 -top-60 -z-10" alt="">
+    <img src="./assets/leaves img pattern (1).png" class="absolute -right-11 -bottom-60 -z-10" alt="">
+  </section>
+
+  <section class="top-offered-products mt-24 max-w-[92%] mx-auto">
+    <div class="top-offered-products-inner">
+      <div class="category-header flex flex-row justify-between w-full">
+        <div class="flex">
+          <h2 class="font-nunito font-bold text-4xl leading-10 mr-20">
+            Top offered products
+          </h2>
+          <div class="timer bg-[#FFC43F] rounded-md flex items-center py-2 px-4">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.75 0C3.46875 0 0 3.46875 0 7.75C0 12.0312 3.46875 15.5 7.75 15.5C12.0312 15.5 15.5 12.0312 15.5 7.75C15.5 3.46875 12.0312 0 7.75 0ZM7.75 14C4.29688 14 1.5 11.2031 1.5 7.75C1.5 4.29688 4.29688 1.5 7.75 1.5C11.2031 1.5 14 4.29688 14 7.75C14 11.2031 11.2031 14 7.75 14ZM9.68125 10.7375L7.02812 8.80937C6.93125 8.7375 6.875 8.625 6.875 8.50625V3.375C6.875 3.16875 7.04375 3 7.25 3H8.25C8.45625 3 8.625 3.16875 8.625 3.375V7.80313L10.7125 9.32187C10.8812 9.44375 10.9156 9.67813 10.7937 9.84688L10.2063 10.6562C10.0844 10.8219 9.85 10.8594 9.68125 10.7375Z"
+                fill="#222222" />
+            </svg>
+            <span class="capitalize text-[#222222] font-open-sans font-normal text-base ml-2 leading-4">Expires in: 12hr
+              : 41min : 8s</span>
+          </div>
+        </div>
+
+        <div class="slider-btns flex gap-3">
+          <button class="btn btn-square h-11 w-11 bg-[#F1F1F1] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.375 2.375L3.17383 8.625L9.375 14.875L7.8125 16.4375L0 8.625L7.8125 0.8125L9.375 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+          <button class="btn btn-square h-11 w-11 bg-[#FFC43F] rounded-xl border-none">
+            <svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 2.375L1.5625 0.8125L9.375 8.625L1.5625 16.4375L0 14.875L6.20117 8.625L0 2.375Z"
+                fill="#222222" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="trending-products-card-list-wrapper">
+        <div
+          class="trending-products-card-list-inner mt-10 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-5">
+          <div
+            class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+            <figure class="bg-[#F9F9F9] rounded-xl relative">
+              <img src="./assets/brittany-bendabout-7C8QudXncyw-unsplash 1.png" alt="Shoes"
+                class="rounded-xl h-[250px]" />
+              <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+                <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                  <g>
+                    <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                  </g>
+                </svg>
+              </div>
+              <span
+                class="discount-figure bg-[#A3BF4C] rounded p-1 text-white font-open-sans text-[15px] tracking-wide absolute top-2 left-2">-25%</span>
+            </figure>
+            <div class="card-body p-0 gap-0">
+              <h2
+                class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+                Pacific barista beverage
+              </h2>
+              <div class="quantity-and-rating flex gap-3">
+                <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                  1 Unit</span>
+                <div class="rating flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                      fill="#FFC43F" />
+                  </svg>
+                  <span class="font-semibold text-sm leading-5 text-black">4.5</span>
+                </div>
+              </div>
+              <div class="before-after-price mt-3 flex gap-2 items-center">
+                <span class="product-price line-through text-[#A8A8A8] font-open-sans font-semibold ">$8.00</span>
+                <span class="product-price font-open-sans font-semibold text-2xl ">$8.00</span>
+              </div>
+              <span class="sold-status text-[#ED8939] font-open-sans my-2 text-base">Sold: 30/40</span>
+              <div class="card-actions mt-3 items-center justify-between">
+                <div class="increment-decrement flex items-center gap-2">
+                  <button
+                    class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                    <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                        fill="#222222" />
+                    </svg>
+                  </button>
+                  <span class="text-xl">2</span>
+                  <button
+                    class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                        fill="#222222" />
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                  Add To Cart
+                  <span>
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                        fill="#222222" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/tyler-nix-KXvj6JMsyog-unsplash 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+               c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+               l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+               C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+               s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+               c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+               C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+            <span
+              class="discount-figure bg-[#A3BF4C] rounded p-1 text-white font-open-sans text-[15px] tracking-wide absolute top-2 left-2">-25%</span>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Kombucha local lilikoi
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 Unit</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.5</span>
+              </div>
+            </div>
+            <div class="before-after-price mt-3 flex gap-2 items-center">
+              <span class="product-price line-through text-[#A8A8A8] font-open-sans font-semibold ">$8.00</span>
+              <span class="product-price font-open-sans font-semibold text-2xl ">$8.00</span>
+            </div>
+            <span class="sold-status text-[#ED8939] font-open-sans my-2 text-base">Sold: 30/40</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+          <div
+            class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+            <figure class="bg-[#F9F9F9] rounded-xl relative">
+              <img src="./assets/olga-kozachenko-SDV7kq7WFgI-unsplash 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+              <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+                <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                  <g>
+                    <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+                 c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+                 l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+                 C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+                 s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+                 c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+                 C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                  </g>
+                </svg>
+              </div>
+              <span
+                class="discount-figure bg-[#A3BF4C] rounded p-1 text-white font-open-sans text-[15px] tracking-wide absolute top-2 left-2">-25%</span>
+            </figure>
+            <div class="card-body p-0 gap-0">
+              <h2
+                class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+                Cheese flavoured Lays
+              </h2>
+              <div class="quantity-and-rating flex gap-3">
+                <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                  1 Unit</span>
+                <div class="rating flex items-center gap-1">
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                      fill="#FFC43F" />
+                  </svg>
+                  <span class="font-semibold text-sm leading-5 text-black">4.5</span>
+                </div>
+              </div>
+              <div class="before-after-price mt-3 flex gap-2 items-center">
+                <span class="product-price line-through text-[#A8A8A8] font-open-sans font-semibold ">$8.00</span>
+                <span class="product-price font-open-sans font-semibold text-2xl ">$8.00</span>
+              </div>
+              <span class="sold-status text-[#ED8939] font-open-sans my-2 text-base">Sold: 30/40</span>
+              <div class="card-actions mt-3 items-center justify-between">
+                <div class="increment-decrement flex items-center gap-2">
+                  <button
+                    class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                    <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                        fill="#222222" />
+                    </svg>
+                  </button>
+                  <span class="text-xl">2</span>
+                  <button
+                    class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                    <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                        fill="#222222" />
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                  Add To Cart
+                  <span>
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                        fill="#222222" />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+          class="card group bg-base-100 shadow-xl p-5 w-full hover:scale-105 transition-all ease-in-out cursor-pointer">
+          <figure class="bg-[#F9F9F9] rounded-xl relative">
+            <img src="./assets/madalyn-cox-RVnDPsyiLEg-unsplash 1.png" alt="Shoes" class="rounded-xl h-[250px]" />
+            <div class="liked-product rounded-full bg-white absolute top-2 right-2 p-2">
+              <svg fill="#000000" height="20" width="20" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 471.701 471.701" xml:space="preserve">
+                <g>
+                  <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+               c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
+               l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
+               C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
+               s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
+               c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
+               C444.801,187.101,434.001,213.101,414.401,232.701z" />
+                </g>
+              </svg>
+            </div>
+            <span
+              class="discount-figure bg-[#A3BF4C] rounded p-1 text-white font-open-sans text-[15px] tracking-wide absolute top-2 left-2">-25%</span>
+          </figure>
+          <div class="card-body p-0 gap-0">
+            <h2
+              class="card-title group-hover:text-[#FFA801] text-[#333333]  font-semibold text-lg leading-6 font-open-sans capitalize mt-3">
+              Oat milk barista
+            </h2>
+            <div class="quantity-and-rating flex gap-3">
+              <span class="uppercase text-sm leading-5 text-[#9D9D9D] tracking-wide ">
+                1 Unit</span>
+              <div class="rating flex items-center gap-1">
+                <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4.90991 0.382647L3.56729 3.22683L0.563373 3.68439C0.0246826 3.76602 -0.191205 4.45988 0.199449 4.85729L2.37272 7.06991L1.8587 10.1955C1.76617 10.7605 2.33571 11.1837 2.81272 10.9194L5.5 9.44364L8.18729 10.9194C8.66429 11.1815 9.23383 10.7605 9.1413 10.1955L8.62729 7.06991L10.8006 4.85729C11.1912 4.45988 10.9753 3.76602 10.4366 3.68439L7.43271 3.22683L6.09009 0.382647C5.84953 -0.124322 5.15252 -0.130766 4.90991 0.382647Z"
+                    fill="#FFC43F" />
+                </svg>
+                <span class="font-semibold text-sm leading-5 text-black">4.5</span>
+              </div>
+            </div>
+            <div class="before-after-price mt-3 flex gap-2 items-center">
+              <span class="product-price line-through text-[#A8A8A8] font-open-sans font-semibold ">$8.00</span>
+              <span class="product-price font-open-sans font-semibold text-2xl ">$8.00</span>
+            </div>
+            <span class="sold-status text-[#ED8939] font-open-sans my-2 text-base">Sold: 30/40</span>
+            <div class="card-actions mt-3 items-center justify-between">
+              <div class="increment-decrement flex items-center gap-2">
+                <button
+                  class="btn btn-square border-none outline-none bg-[#F2F2F2] hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="2" viewBox="0 0 8 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 2H0.571429C0.255893 2 0 1.70146 0 1.33333V0.666667C0 0.298542 0.255893 0 0.571429 0H7.42857C7.74411 0 8 0.298542 8 0.666667V1.33333C8 1.70146 7.74411 2 7.42857 2Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+                <span class="text-xl">2</span>
+                <button
+                  class="btn btn-square bg-[#F2F2F2] border-none hover:text-white hover:bg-gray-300 min-h-0 h-8 w-8">
+                  <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M7.42857 4.85714H4.85714V7.42857C4.85714 7.74411 4.60125 8 4.28571 8H3.71429C3.39875 8 3.14286 7.74411 3.14286 7.42857V4.85714H0.571429C0.255893 4.85714 0 4.60125 0 4.28571V3.71429C0 3.39875 0.255893 3.14286 0.571429 3.14286H3.14286V0.571428C3.14286 0.255892 3.39875 0 3.71429 0H4.28571C4.60125 0 4.85714 0.255892 4.85714 0.571428V3.14286H7.42857C7.74411 3.14286 8 3.39875 8 3.71429V4.28571C8 4.60125 7.74411 4.85714 7.42857 4.85714Z"
+                      fill="#222222" />
+                  </svg>
+                </button>
+              </div>
+              <button
+                class="font-open-sans font-semibold text-base capitalize text-black flex items-center gap-2 mr-9">
+                Add To Cart
+                <span>
+                  <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M12.8363 7.06216L13.9853 2.18716C14.0682 1.83518 13.7908 1.5 13.4164 1.5H3.86964L3.64686 0.449766C3.59134 0.187992 3.35247 0 3.07536 0H0.583333C0.261163 0 0 0.251836 0 0.5625V0.9375C0 1.24816 0.261163 1.5 0.583333 1.5H2.28188L3.9893 9.54926C3.58082 9.77578 3.30556 10.2005 3.30556 10.6875C3.30556 11.4124 3.91495 12 4.66667 12C5.41839 12 6.02778 11.4124 6.02778 10.6875C6.02778 10.3201 5.87108 9.98824 5.61886 9.75H10.7145C10.4623 9.98824 10.3056 10.3201 10.3056 10.6875C10.3056 11.4124 10.9149 12 11.6667 12C12.4184 12 13.0278 11.4124 13.0278 10.6875C13.0278 10.1678 12.7145 9.71878 12.2602 9.50613L12.3943 8.93716C12.4773 8.58518 12.1998 8.25 11.8255 8.25H5.30146L5.14238 7.5H12.2674C12.5398 7.5 12.7759 7.31827 12.8363 7.06216Z"
+                      fill="#222222" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
